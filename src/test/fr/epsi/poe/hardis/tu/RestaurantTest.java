@@ -11,6 +11,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class RestaurantTest {
 
 
+    public static final String STRING_N = "00336123456789";
+
     @Test
     public void testThatRestaurantIsOpenByDefault() {
         // Arrange
@@ -24,7 +26,7 @@ class RestaurantTest {
     @Test
     public void testThatValidPhoneNumberIsCorrectlySaved() {
         Restaurant restaurant = new Restaurant();
-        String number = "00336123456789";
+        String number = STRING_N;
         restaurant.setNumeroDeTelephone(number);
         Assertions.assertEquals(number, restaurant.getNumeroDeTelephone(), "");
     }
