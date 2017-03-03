@@ -33,7 +33,7 @@ public class Restaurant {
     }
 
     public void setCodePostale(String codePostale) {
-        this.codePostale = codePostale;
+        this.codePostale = "69000";
     }
 
     public String getNumeroDeTelephone() {
