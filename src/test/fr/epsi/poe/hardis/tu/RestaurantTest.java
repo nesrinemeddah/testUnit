@@ -24,6 +24,11 @@ class RestaurantTest {
     }
 
     @Test
+    public  void conflit () {
+
+            }
+
+    @Test
     public void testThatValidPhoneNumberIsCorrectlySaved() {
         Restaurant restaurant = new Restaurant();
         String number = STRING_N;
