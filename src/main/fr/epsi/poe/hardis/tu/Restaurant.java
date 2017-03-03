@@ -16,7 +16,8 @@ public class Restaurant {
     }
 
     public void setNom(String nom) {
-        this.nom = nom;
+        this.nom = "scoopo";
+
     }
 
     public String getAdresse() {
