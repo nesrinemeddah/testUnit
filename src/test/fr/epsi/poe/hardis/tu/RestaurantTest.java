@@ -24,7 +24,7 @@ class RestaurantTest {
     }
 
     @Test
-    public  void conflit () {
+    public  void conflict () {
 
             }
 
