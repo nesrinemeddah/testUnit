@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class RestaurantTest {
 
 
-    public static final String STR_ING = "00336123456789";
+    public static final String STRING_N = "00336123456789";
 
     @Test
     public void testThatRestaurantIsOpenByDefault() {
@@ -23,11 +23,10 @@ class RestaurantTest {
         Assertions.assertTrue(verifie);
     }
 
-
     @Test
     public void testThatValidPhoneNumberIsCorrectlySaved() {
         Restaurant restaurant = new Restaurant();
-        String number = STR_ING;
+        String number = STRING_N;
         restaurant.setNumeroDeTelephone(number);
         Assertions.assertEquals(number, restaurant.getNumeroDeTelephone(), "");
     }
