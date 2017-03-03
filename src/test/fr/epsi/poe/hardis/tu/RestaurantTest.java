@@ -13,8 +13,6 @@ class RestaurantTest {
 
     @Test
     public void testThatRestaurantIsOpenByDefault() {
-
-
         // Arrange
         Restaurant restaurant = new Restaurant();
         // Act
@@ -37,5 +35,15 @@ class RestaurantTest {
         String number = "006123456789";
         restaurant.setNumeroDeTelephone(number);
         Assertions.assertNotEquals(number, restaurant.getNumeroDeTelephone(), "");
+    }
+
+    @Test
+    public void testThatRestaurantIsNotOpen() {
+        // Arrange
+        Restaurant restaurant = new Restaurant();
+        // Act
+        boolean verifie = restaurant.isOuvert();
+        // Assert
+        Assertions.assertFalse(verifie);
     }
 }
